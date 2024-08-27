@@ -9,16 +9,16 @@ contract LekanToken is ERC721A, Ownable {
 
     uint256 private limit = 5;
     string[] private descriptions = [
+        "Ancient Temple Ruins in a Jungle",
+        "Enchanted Forest with Glowing Flora",
+        "Sunset Over a Futuristic Cityscape"
         "Car from the future driving on water",
-        "Girl sitting on a hill overlooking the sky, stars planets jupiter",
-        "Futuristic robot making coffee in a cafe",
-        "Cute baby panda eating bamboo in the forest",
-        "Night sky filled with spaceships and shooting stars, neon colors, drawing"
+        "Girl sitting on a hill overlooking the sky, stars and planets"
     ];
     mapping(uint256 => string) private _tokenURIs;
 
     function _baseURI() internal pure override returns (string memory) {
-        return "QmZMcWPjGipqd4ij4LdRWZPmbGKYvW4vrAz4K6QQN9Ry45";
+        return "QmcXgxBYsniEqbZeWUdiaMiBxjdo3C4tuhbRK65ZK2BNrC";
     }
 
     function mint(address reciever, uint256 quantity) external onlyOwner {
