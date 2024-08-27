@@ -4,7 +4,7 @@ const contractJSON = require("../artifacts/contracts/LekanToken.sol/LekanToken.j
 
 const contractAddress = "0xc4727A387Ca9f0e17d333b46aBA91Bec24bB0166";
 const contractABI = contractJSON.abi;
-const fxERC721ContractAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
+const fxERC721ContractAddress = "0x34F5A25B627f50Bb3f5cAb72807c4D4F405a9232";
 const walletAddress = "0xb49e01B29BAd2c70a331fc876b129457542F7563";
 
 async function main() {
