@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const fxRootContractABI = require("../fxRootContract.json");
 const contractJSON = require("../artifacts/contracts/LekanToken.sol/LekanToken.json");
 
-const contractAddress = "0xc4727A387Ca9f0e17d333b46aBA91Bec24bB0166";
+const contractAddress = "0xd2900f9d8bc61337bF251b4ca5A2c32eb6373c53";
 const contractABI = contractJSON.abi;
 const fxERC721ContractAddress = "0x34F5A25B627f50Bb3f5cAb72807c4D4F405a9232";
 const walletAddress = "0xb49e01B29BAd2c70a331fc876b129457542F7563";

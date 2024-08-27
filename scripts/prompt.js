@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const contractJSON = require("../artifacts/contracts/LekanToken.sol/LekanToken.json");
 require("dotenv").config();
 
-const contractAddress = "0xc4727A387Ca9f0e17d333b46aBA91Bec24bB0166";
+const contractAddress = "0xd2900f9d8bc61337bF251b4ca5A2c32eb6373c53";
 const contractABI = contractJSON.abi;
 
 async function main() {

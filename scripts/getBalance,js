@@ -1,0 +1,21 @@
+const hre = require("hardhat");
+const contractJSON = require("../artifacts/contracts/OpeToken.sol/OpeToken.json");
+
+const contractAddress = "0x3bc6F757E29Fc12791fC3F57971bf9964A912dBF";
+const contractABI = contractJSON.abi;
+const walletAddress = "0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC";
+
+async function main() {
+  const tokencontract = await hre.ethers.getContractAt(contractABI, contractAddress);
+
+  const balance = await tokencontract.balanceOf(walletAddress);
+
+  console.log(`The number of nfts in ${walletAddress} is ${balance}`);
+}
+
+// We recommend this pattern to be able to use async/await everywhere
+// and properly handle errors.
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
